@@ -11,34 +11,39 @@
 @interface FormularioViewController ()
 
 @end
+
 @import FirebaseAnalytics;
 
 @implementation FormularioViewController
 
-- (IBAction) confirmarButton:(id)sender {
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
+    self.title = @"Novo Contato";
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Adicionar" style:UIBarButtonItemStylePlain target:self action:@selector(salvarContato)];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [FIRAnalytics logEventWithName:kFIREventScreenView
+                        parameters:@{kFIRParameterScreenClass: @"FormularioScreenClass",
+                                     kFIRParameterScreenName: @"FormularioScreenName"}];
+}
+
+-(void) salvarContato {
     Contato *contato = [Contato new];
+    contato = [Contato new];
     contato.nome = self.nome.text;
     contato.endereco = self.endereco.text;
     contato.email = self.email.text;
     contato.telefone = self.telefone.text;
     contato.site = self.site.text;
-    
+    [self.contatos addObject:contato];
+    NSLog(@"%@", self.contatos);
     [self.navigationController popViewControllerAnimated:TRUE];
-
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"Teste";
-
-//    [FIRAnalytics logEventWithName:kFIREventSelectContent parameters:@{
-//        kFIRParameterItemID:[NSString stringWithFormat:@"id-%@", self.title],
-//        kFIRParameterItemName:self.title,
-//        kFIRParameterContentType:@"image"
-//
-//    }];
 }
 
 @end

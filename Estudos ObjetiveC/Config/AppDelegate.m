@@ -12,6 +12,7 @@
 @end
 @import UIKit;
 @import Firebase;
+@import FirebaseAnalytics;
 
 @implementation AppDelegate
 
@@ -19,6 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [FIRApp configure];
+    
+    [FIRAnalytics logEventWithName:kFIREventAppOpen parameters:@{
+        kFIRParameterSuccess: @"Claro_Flex",
+        kFIRParameterCampaign: @"Claro_FLEX"
+    }];
+    
     return YES;
 }
 
