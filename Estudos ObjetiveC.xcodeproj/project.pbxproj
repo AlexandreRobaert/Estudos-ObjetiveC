@@ -18,7 +18,6 @@
 		AC5C61D4266034340001E800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5C61D3266034340001E800 /* Assets.xcassets */; };
 		AC5C61D7266034340001E800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5C61D5266034340001E800 /* LaunchScreen.storyboard */; };
 		AC5C61DA266034340001E800 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61D9266034340001E800 /* main.m */; };
-		AC5C61E12660350E0001E800 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5C61E02660350E0001E800 /* GoogleService-Info.plist */; };
 		AC6CB05926615214008C6363 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6CB05826615214008C6363 /* Contato.m */; };
 		AC8A51C92661729000808B25 /* ListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8A51C82661729000808B25 /* ListaTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		AC5C61D6266034340001E800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5C61D8266034340001E800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC5C61D9266034340001E800 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AC5C61E02660350E0001E800 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC6CB05726615214008C6363 /* Contato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		AC6CB05826615214008C6363 /* Contato.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		AC8A51C72661729000808B25 /* ListaTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListaTableViewController.h; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				AC6CB05D2661526D008C6363 /* View */,
 				AC6CB05B26615227008C6363 /* Controller */,
 				AC5C61D8266034340001E800 /* Info.plist */,
-				AC5C61E02660350E0001E800 /* GoogleService-Info.plist */,
 				AC5C61D9266034340001E800 /* main.m */,
 				AC5C61D0266034330001E800 /* Estudos_ObjetiveC.xcdatamodeld */,
 			);
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5C61D7266034340001E800 /* LaunchScreen.storyboard in Resources */,
-				AC5C61E12660350E0001E800 /* GoogleService-Info.plist in Resources */,
 				AC5C61D4266034340001E800 /* Assets.xcassets in Resources */,
 				AC5C61CF266034330001E800 /* Main.storyboard in Resources */,
 			);
