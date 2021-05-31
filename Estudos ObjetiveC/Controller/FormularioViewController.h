@@ -8,6 +8,19 @@
 #import <UIKit/UIKit.h>
 #import "Contato.h"
 
+@protocol ManipuladorContatoDelegate <NSObject>
+
+@required
+-(void) adicionarContato: (Contato *)contato;
+
+@optional
+-(void) removeContato: (Contato *)contato;
+
+@optional
+-(void) alteraContato: (Contato *)contato indexOfContato: (NSInteger *) indexOfContato;
+
+@end
+
 @interface FormularioViewController : UIViewController
 
 @property IBOutlet UITextField *nome;
@@ -16,6 +29,8 @@
 @property IBOutlet UITextField *telefone;
 @property (weak, nonatomic) IBOutlet UITextField *site;
 
-@property NSMutableArray *contatos;
+@property id<ManipuladorContatoDelegate> delegate;
+@property Contato *contato;
+@property NSInteger indexOfContato;
 
 @end

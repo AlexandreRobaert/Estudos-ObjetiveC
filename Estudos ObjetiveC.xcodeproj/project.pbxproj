@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9CC1E864E6BB142814B0FD4C /* Pods_Estudos_ObjetiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972E04EA71B0D25A6A95D539 /* Pods_Estudos_ObjetiveC.framework */; };
 		AC481E2926603CC400B6E1DC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC481E2826603CC400B6E1DC /* AdSupport.framework */; };
+		AC5113A92663EB160083E0B6 /* ContatoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5113A82663EB160083E0B6 /* ContatoTableViewCell.m */; };
 		AC5C61C6266034330001E800 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61C5266034330001E800 /* AppDelegate.m */; };
 		AC5C61C9266034330001E800 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61C8266034330001E800 /* SceneDelegate.m */; };
 		AC5C61CC266034330001E800 /* FormularioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61CB266034330001E800 /* FormularioViewController.m */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		972E04EA71B0D25A6A95D539 /* Pods_Estudos_ObjetiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Estudos_ObjetiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC481E2826603CC400B6E1DC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AC5113A72663EB160083E0B6 /* ContatoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContatoTableViewCell.h; sourceTree = "<group>"; };
+		AC5113A82663EB160083E0B6 /* ContatoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatoTableViewCell.m; sourceTree = "<group>"; };
 		AC5C61C1266034330001E800 /* Estudos ObjetiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Estudos ObjetiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5C61C4266034330001E800 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC5C61C5266034330001E800 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,10 +108,12 @@
 		AC6CB05B26615227008C6363 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC5C61CA266034330001E800 /* FormularioViewController.h */,
-				AC5C61CB266034330001E800 /* FormularioViewController.m */,
 				AC8A51C72661729000808B25 /* ListaTableViewController.h */,
 				AC8A51C82661729000808B25 /* ListaTableViewController.m */,
+				AC5113A72663EB160083E0B6 /* ContatoTableViewCell.h */,
+				AC5113A82663EB160083E0B6 /* ContatoTableViewCell.m */,
+				AC5C61CA266034330001E800 /* FormularioViewController.h */,
+				AC5C61CB266034330001E800 /* FormularioViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				AC5C61CC266034330001E800 /* FormularioViewController.m in Sources */,
 				AC5C61C6266034330001E800 /* AppDelegate.m in Sources */,
 				AC8A51C92661729000808B25 /* ListaTableViewController.m in Sources */,
+				AC5113A92663EB160083E0B6 /* ContatoTableViewCell.m in Sources */,
 				AC5C61C9266034330001E800 /* SceneDelegate.m in Sources */,
 				AC6CB05926615214008C6363 /* Contato.m in Sources */,
 				AC5C61D2266034330001E800 /* Estudos_ObjetiveC.xcdatamodeld in Sources */,

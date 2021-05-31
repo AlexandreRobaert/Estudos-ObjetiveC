@@ -19,30 +19,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Novo Contato";
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Adicionar" style:UIBarButtonItemStylePlain target:self action:@selector(salvarContato)];
-    
+    if(self.contato == nil){
+        self.title = @"Novo Contato";
+        self.contato = [Contato new];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Adicionar" style:UIBarButtonItemStylePlain target:self action:@selector(salvarContato)];
+    }else{
+        self.title = @"Alterar Contato";
+        self.nome.text = self.contato.nome;
+        self.telefone.text = self.contato.telefone;
+        self.endereco.text = self.contato.endereco;
+        self.site.text = self.contato.site;
+        self.email.text = self.contato.email;
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Salvar" style:UIBarButtonItemStylePlain target:self action:@selector(salvarContato)];
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
-    [FIRAnalytics logEventWithName:kFIREventScreenView
-                        parameters:@{kFIRParameterScreenClass: @"FormularioScreenClass",
-                                     kFIRParameterScreenName: @"FormularioScreenName"}];
+//    
+//    [FIRAnalytics logEventWithName:kFIREventScreenView parameters:@{
+//        kFIRParameterScreenName: @"Tela_Adiciona_Contato",
+//        kFIRParameterSuccess: @1,
+//        kFIRParameterCampaign: @"Claro_FLEX_Promocao"
+//    }];
 }
 
 -(void) salvarContato {
-    Contato *contato = [Contato new];
-    contato = [Contato new];
-    contato.nome = self.nome.text;
-    contato.endereco = self.endereco.text;
-    contato.email = self.email.text;
-    contato.telefone = self.telefone.text;
-    contato.site = self.site.text;
-    [self.contatos addObject:contato];
-    NSLog(@"%@", self.contatos);
+    self.contato.nome = self.nome.text;
+    self.contato.endereco = self.endereco.text;
+    self.contato.email = self.email.text;
+    self.contato.telefone = self.telefone.text;
+    self.contato.site = self.site.text;
+    
+//    if (!self.indexOfContato >= 0) {
+//        [self.delegate adicionarContato:self.contato];
+//    }else{
+//        [self.delegate alteraContato:self.contato indexOfContato:self.indexOfContato];
+//    }
+    
     [self.navigationController popViewControllerAnimated:TRUE];
 }
 

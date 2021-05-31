@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FormularioViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ListaTableViewController : UITableViewController
+@interface ListaTableViewController : UITableViewController<ManipuladorContatoDelegate>
 
 @property NSMutableArray *contatos;
 
