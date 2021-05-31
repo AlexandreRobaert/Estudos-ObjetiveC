@@ -82,10 +82,10 @@
     
     [self.navigationController pushViewController:form animated:true];
     
-//    [FIRAnalytics logEventWithName:kFIREventViewItemList parameters:@{
-//        kFIRParameterItemName: [NSString stringWithFormat:@"item %@", [[cell textLabel] text]],
-//        kFIRParameterItemListID: [NSString stringWithFormat:@"Index %U", indexPath.row]
-//    }];
+    [FIRAnalytics logEventWithName:kFIREventViewItemList parameters:@{
+        kFIRParameterItemName: [NSString stringWithFormat:@"item %@", [[cell textLabel] text]],
+        kFIRParameterItemListID: [NSString stringWithFormat:@"Index %U", indexPath.row]
+    }];
 }
 
 @end

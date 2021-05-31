@@ -10,6 +10,7 @@
 		9CC1E864E6BB142814B0FD4C /* Pods_Estudos_ObjetiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972E04EA71B0D25A6A95D539 /* Pods_Estudos_ObjetiveC.framework */; };
 		AC481E2926603CC400B6E1DC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC481E2826603CC400B6E1DC /* AdSupport.framework */; };
 		AC5113A92663EB160083E0B6 /* ContatoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5113A82663EB160083E0B6 /* ContatoTableViewCell.m */; };
+		AC588E302665127F00C79902 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC588E2F2665127F00C79902 /* GoogleService-Info.plist */; };
 		AC5C61C6266034330001E800 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61C5266034330001E800 /* AppDelegate.m */; };
 		AC5C61C9266034330001E800 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61C8266034330001E800 /* SceneDelegate.m */; };
 		AC5C61CC266034330001E800 /* FormularioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5C61CB266034330001E800 /* FormularioViewController.m */; };
@@ -27,6 +28,7 @@
 		AC481E2826603CC400B6E1DC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AC5113A72663EB160083E0B6 /* ContatoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContatoTableViewCell.h; sourceTree = "<group>"; };
 		AC5113A82663EB160083E0B6 /* ContatoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatoTableViewCell.m; sourceTree = "<group>"; };
+		AC588E2F2665127F00C79902 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC5C61C1266034330001E800 /* Estudos ObjetiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Estudos ObjetiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5C61C4266034330001E800 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC5C61C5266034330001E800 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				AC6CB05D2661526D008C6363 /* View */,
 				AC6CB05B26615227008C6363 /* Controller */,
 				AC5C61D8266034340001E800 /* Info.plist */,
+				AC588E2F2665127F00C79902 /* GoogleService-Info.plist */,
 				AC5C61D9266034340001E800 /* main.m */,
 				AC5C61D0266034330001E800 /* Estudos_ObjetiveC.xcdatamodeld */,
 			);
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5C61D7266034340001E800 /* LaunchScreen.storyboard in Resources */,
+				AC588E302665127F00C79902 /* GoogleService-Info.plist in Resources */,
 				AC5C61D4266034340001E800 /* Assets.xcassets in Resources */,
 				AC5C61CF266034330001E800 /* Main.storyboard in Resources */,
 			);

@@ -20,10 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [FIRApp configure];
-//
-//    [FIRAnalytics logEventWithName:kFIREventAppOpen parameters:@{
-//        kFIRParameterAdPlatform : @"iOS",
-//    }];
+
+    [FIRAnalytics logEventWithName:kFIREventAppOpen parameters:@{
+        kFIRParameterAdPlatform : @"iOS",
+    }];
     
     return YES;
 }
